@@ -6,6 +6,7 @@
   <title>EX Europe Electrical — Safety &amp; Compliance</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,300;0,400;0,700;0,800;0,900;1,800&family=Barlow:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.19.0/dist/tabler-icons.min.css">
   <style>
     /* — TOKENS — */
@@ -42,9 +43,23 @@
     .nav-logo img { height: 34px; width: auto; }
     .nav-links {
       display: flex; align-items: center; gap: 2.5rem;
-      font-family: var(--FH); font-size: 0.8rem; font-weight: 500;
-      letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
     }
+
+    /* Brand nav buttons — matched exactly to the main exeurope.co.uk header */
+    .brand-nav-link {
+      font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase; color: #8a9ab0;
+      text-decoration: none; transition: color 0.2s;
+    }
+    .brand-nav-link:hover { color: #f4f1ec; }
+    .brand-nav-cta {
+      background: #c9a84c; color: #0d1b2a;
+      font-family: 'DM Mono', monospace; font-size: 0.72rem; font-weight: 500;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.6rem 1.4rem; border: none; cursor: pointer;
+      transition: background 0.2s; text-decoration: none; display: inline-block;
+    }
+    .brand-nav-cta:hover { background: #e8c97a; }
     .iso-badge {
       font-family: var(--FH); font-size: 0.72rem; font-weight: 700;
       letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink);
@@ -345,8 +360,9 @@
       <span style="font-family:var(--FH); font-weight:900; font-size:1.1rem; letter-spacing:0.02em; text-transform:uppercase;">EX Europe <span style="color:var(--orange);">Electrical</span></span>
     </div>
     <div class="nav-links">
-      <a href="#contact" style="color:var(--muted); font-family:var(--FH); font-size:0.8rem; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none; transition:color 0.15s;" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--muted)'">Contact</a>
+      <a href="#contact" class="brand-nav-link">Contact</a>
     </div>
+    <a href="../index.html" class="brand-nav-cta">EXEUROPE</a>
   </nav>
 
   <!-- HERO -->
