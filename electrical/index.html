@@ -56,6 +56,19 @@
       padding: 6rem 3rem 5rem;
       border-bottom: 1px solid var(--border);
     }
+    .hero-inner {
+      display: grid; grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem; align-items: center;
+    }
+    .hero-image {
+      width: 100%; height: 420px; object-fit: cover;
+      border: 1px solid var(--border);
+    }
+    .full-bleed-img {
+      display: block; width: 100vw; margin-left: 50%;
+      transform: translateX(-50%);
+      object-fit: cover;
+    }
     .hero-tag {
       font-family: var(--FH); font-size: 0.72rem; font-weight: 400;
       letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange);
@@ -294,6 +307,8 @@
     @media (max-width: 1024px) {
       .cert-inner { grid-template-columns: 1fr; gap: 3rem; }
       .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero-inner { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-image { height: 280px; order: -1; }
     }
     @media (max-width: 768px) {
       .nav { padding: 0 1.5rem; }
@@ -301,6 +316,8 @@
       section { padding: 3.5rem 1.5rem; }
       .hero { padding: 3.5rem 1.5rem 3rem; }
       .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
+      .process-banner { height: 220px; }
+      .waste-banner { height: 260px; }
       .process-grid { grid-template-columns: 1fr 1fr; }
       .process-card { border-bottom: 1px solid var(--border); }
       .services-grid { grid-template-columns: 1fr; }
@@ -334,29 +351,34 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-tag">PAT Testing &amp; Compliance</div>
-      <h1 class="hero-title">
-        Certify the<br>
-        <span class="orange">Pulse</span> of your<br>
-        Workspace.
-      </h1>
-      <p class="hero-body">
-        Professional Portable Appliance Testing with instant digital certification. Precision diagnostics. Zero downtime. Complete compliance.
-      </p>
-      <div class="hero-stats">
-        <div>
-          <div class="stat-num">15K<span class="orange">+</span></div>
-          <div class="stat-label">Appliances Tested</div>
-        </div>
-        <div>
-          <div class="stat-num">99.8<span style="font-size:1.8rem">%</span></div>
-          <div class="stat-label">First-Pass Rate</div>
-        </div>
-        <div>
-          <div class="stat-num">&lt;24<span style="font-size:1.8rem">h</span></div>
-          <div class="stat-label">Certificate Delivery</div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-tag">PAT Testing &amp; Compliance</div>
+        <h1 class="hero-title">
+          Certify the<br>
+          <span class="orange">Pulse</span> of your<br>
+          Workspace.
+        </h1>
+        <p class="hero-body">
+          Professional Portable Appliance Testing with instant digital certification. Precision diagnostics. Zero downtime. Complete compliance.
+        </p>
+        <div class="hero-stats">
+          <div>
+            <div class="stat-num">15K<span class="orange">+</span></div>
+            <div class="stat-label">Appliances Tested</div>
+          </div>
+          <div>
+            <div class="stat-num">99.8<span style="font-size:1.8rem">%</span></div>
+            <div class="stat-label">First-Pass Rate</div>
+          </div>
+          <div>
+            <div class="stat-num">&lt;24<span style="font-size:1.8rem">h</span></div>
+            <div class="stat-label">Certificate Delivery</div>
+          </div>
         </div>
       </div>
+      <img class="hero-image" src="images/preview1.webp" alt="PAT test pass tags on tested equipment">
+    </div>
   </section>
 
   <!-- PROCESS -->
@@ -367,6 +389,7 @@
         <h2 class="sec-title">Precision at<br>Every Phase.</h2>
       </div>
     </div>
+    <img class="full-bleed-img process-banner" style="height:340px; margin-top:1rem; margin-bottom:3rem;" src="images/preview2.webp" alt="Engineer testing an electrical component with a multimeter">
     <div class="process-grid">
       <div class="process-card">
         <div class="step-label">Step 01</div>
@@ -510,6 +533,8 @@
       </div>
     </div>
   </section>
+
+  <img class="full-bleed-img waste-banner" style="height:420px;" src="images/preview3.webp" alt="Waste electrical and electronic equipment ready for recycling">
 
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
