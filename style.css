@@ -204,7 +204,7 @@ footer {
   background: var(--navy-2); padding: 4rem 3rem 2rem;
   border-top: 1px solid var(--border);
 }
-.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; margin-bottom: 3rem; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 4rem; margin-bottom: 3rem; }
 .footer-brand { font-family: var(--font-head); font-size: 2rem; letter-spacing: 0.05em; }
 .footer-brand .eu { color: var(--gold); }
 .footer-brand p { font-family: var(--font-body); font-size: 0.83rem; color: var(--muted); font-weight: 300; margin-top: 0.8rem; max-width: 280px; line-height: 1.7; }
